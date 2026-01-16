@@ -1,0 +1,24 @@
+{
+  "tech": "Javascript",
+  "data": [
+    {
+      "priority": 1,
+      "title": "Kuniko Decor (Ecommerce UI)",
+      "shortDescription": "Kuniko Decor decoration items selling website UI",
+      "cover": "https://res.cloudinary.com/dau0woeio/image/upload/v1765717907/Kuniko_Decor_Cover_syz6e9.png",
+      "livePreview": "https://sagar6755.github.io/Kuniko-Decor/",
+      "visitors": "8K Visitors",
+      "earned": "$400 Earned"
+    },
+
+     {
+      "priority": 2,
+      "title": "User Management",
+      "shortDescription": "A programming related article site to share my learnings",
+      "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656970810/Codevertiser_xlxdje.png",
+      "livePreview": "https://example.com/beta",
+      "visitors": "8K Visitors",
+      "earned": "$400 Earned"
+    }
+  ]
+}
