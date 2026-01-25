@@ -7,7 +7,7 @@ import ServiceCard from './ServiceCard'
 
 const ServiceSection = () => {
   const scrollRef = useRef<HTMLDivElement>(null)
-  const animationRef = useRef<number>()
+  const animationRef = useRef<number>(0)
   const isPaused = useRef(false)
 
   useEffect(() => {
