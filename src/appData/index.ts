@@ -17,6 +17,7 @@ import {
   SQL,
   TailwindCSS,
   TypescriptIcon,
+  signImg,
 } from '../utils/icons'
 
 // Project Data

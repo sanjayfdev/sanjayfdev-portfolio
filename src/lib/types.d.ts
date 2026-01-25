@@ -31,5 +31,5 @@ export interface Testimonial {
   feedback: string
   image: string
   stars: number
-  createdAt: string
+  // createdAt: string
 }

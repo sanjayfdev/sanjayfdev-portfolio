@@ -22,6 +22,7 @@ import Csharp from '../assets/icons/C#.png'
 import MongoDB from '../assets/icons/MongoDB.png'
 import Angular from '../assets/icons/angular.png'
 import GraphQL from '../assets/icons/GraphQL.png'
+import signImg from '../assets/images/sign.png'
 
 const PreviewIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
@@ -354,5 +355,6 @@ export {
   Redux,
   MUI,
   Angular,
-  GraphQL
+  GraphQL,
+  signImg
 }

@@ -16,7 +16,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ testimonials })
     <section id="testimonials">
       <SectionHeading
         title="// Testimonials"
-        subtitle="Don't just take our word for it - see what actual users of our service have to say about their experience."
+        subtitle="Sample feedback based on personal projects, practice work, and peer reviews."
       />
 
       <div className="hide-scrollbar my-8 flex gap-8 overflow-x-auto">
@@ -24,9 +24,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ testimonials })
           <TestimonialCard
             key={idx}
             testimonial={testimonial}
-            handleActiveCard={() => {
-              setActiveCard(idx)
-            }}
+            handleActiveCard={() => setActiveCard(idx)}
           />
         ))}
       </div>
@@ -35,7 +33,9 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ testimonials })
         {testimonials.map((_, idx) => (
           <div
             key={idx}
-            className={`${idx === activeCard ? 'bg-accent size-[12px]' : 'size-[10px] bg-white/50'} rounded-full`}
+            className={`${
+              idx === activeCard ? 'bg-accent size-[12px]' : 'size-[10px] bg-white/50'
+            } rounded-full`}
           />
         ))}
       </div>

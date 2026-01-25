@@ -1,0 +1,31 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Kuniko Decor (Ecommerce UI)",
+            "tech": "JavaScript",
+            "description": "Kuniko Decor decoration items selling website UI",
+            "github": "https://github.com/sanjayfdev/kuniko-decor",
+            "live": "https://sanjayfdev.github.io/Kuniko-Decor/",
+            "cover": "https://res.cloudinary.com/dau0woeio/image/upload/v1765717907/Kuniko_Decor_Cover_syz6e9.png"
+        },
+        {
+            "id": 2,
+            "title": "User Management",
+            "tech": "JavaScript",
+            "description": "A programming related article site to share my learnings",
+            "github": "https://github.com/yourname/weather-react",
+            "live": "https://weather-react.vercel.app",
+            "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656970810/Codevertiser_xlxdje.png"
+        },
+                {
+            "id": 3,
+            "title": "Personal Portfolio",
+            "tech": "Next",
+            "description": "A programming related article site to share my learnings",
+            "github": "https://github.com/yourname/weather-react",
+            "live": "https://weather-react.vercel.app",
+            "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656970810/Codevertiser_xlxdje.png"
+        }
+    ]
+}

@@ -63,17 +63,17 @@ const Footer = () => {
                 sanjaykumar15.dev@gmail.com
               </a>
               <a
-                href="tel:+92 3123456789"
+                href="tel:+91 8285029324"
                 className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
-                +92 3123456789
+                +91 8285029324
               </a>
             </div>
             <div>
               <div>
                 <h5 className="text-neutral mb-4 text-lg font-medium">Location</h5>
                 <address className="text-tertiary-content flex flex-col text-sm font-light">
-                  <span>123456, Pakistan</span>
-                  <span>Karachi 22/5/8, Office 4</span>
+                  <span>1/3247, Ram Nagar Extn</span>
+                  <span>Shahdara Delhi 110032</span>
                 </address>
               </div>
             </div>
