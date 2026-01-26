@@ -1,22 +1,16 @@
 export interface Project {
-  title: string
-  shortDescription: string
-  priority: number
-  cover: string
-  livePreview?: string
-  githubLink?: string
-  visitors?: string
-  earned?: string
-  githubStars?: string
-  ratings?: string
-  numberOfSales?: string
-  type: string
-  siteAge?: string
+  id: number;
+  title: string;
+  description: string;
+  tech: string[];
+  cover: string;
+  github?: string;
+  live?: string;
 }
 
 export interface ProjectTech {
   tech : string,
-  data : Project[]
+  projects : Project[]
 }
 
 export interface Heading {

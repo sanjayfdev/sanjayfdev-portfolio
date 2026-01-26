@@ -9,7 +9,7 @@ import ProjectTabs from "../components/Projects/ProjectsTabs"
 import { testimonials } from '@/components/Testimonials/testimonials'
 
 export default async function Home() {
-  const projects = await getAllProjects()
+  // const projects = await getAllProjects()
   // const testimonials = await getAllTestimonials()
 
   return (
@@ -17,9 +17,8 @@ export default async function Home() {
       <Hero />
       <Skills skills={skillList} />
       <div className="mx-auto my-8 max-w-[1200px] px-4 md:my-[3.75rem]">
-        <ProjectTabs projects={projects}/>
+        <ProjectTabs />
         <ServiceSection />
-        {/* <TestimonialSection testimonials={testimonials} /> */}
         <TestimonialSection testimonials={testimonials} />
         <ContactSection />
       </div>

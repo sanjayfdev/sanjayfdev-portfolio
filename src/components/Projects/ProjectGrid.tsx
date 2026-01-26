@@ -11,7 +11,7 @@ interface ProjectGridProps {
   tech: string;
 }
 
-const ProjectGrid: React.FC<ProjectGridProps> = ({ tech }) => {
+const ProjectGrid: React.FC<ProjectGridProps> = ({tech}) => {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
