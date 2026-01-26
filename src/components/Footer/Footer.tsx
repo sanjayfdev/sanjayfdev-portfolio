@@ -1,19 +1,28 @@
 import { footerLinks, languages } from '@/appData'
 import { socials } from '@/appData/personal'
 import Logo from '../Navbar/Logo'
+import Image from 'next/image'
+import { signImg } from '@/utils/icons'
 
 const Footer = () => {
   return (
     <footer className="bg-secondary relative flex min-h-[560px] flex-col justify-between gap-20 overflow-hidden px-4 py-14 md:p-14">
       <div className="relative z-20 grid grid-cols-1 items-start gap-20 md:grid-cols-2 md:gap-12">
         <div>
-          <h5 className="mb-8 flex items-center gap-2">
-            <Logo width={30} height={24} />
-            <span className="text-neutral text-lg font-medium">Sanjay Kumar</span>
+          <h5 className="flex items-center gap-2 mb-3">
+            {/* <Logo width={30} height={24} /> */}
+            <Image
+              src={signImg}
+              alt="Sign"
+              width={100}
+              height={75}
+            // className="mx-auto rounded-full"
+            />
+            {/* <span className="text-neutral text-lg font-medium">Sanjay Kumar</span> */}
           </h5>
           <p className="text-tertiary-content">
-            The first free end-to-end analytics service for the site, designed to work with
-            enterprises of various levels and business segments.
+            I’m Sanjay Kumar, a full-stack web developer focused on building fast, scalable,
+            and user-friendly web applications using modern technologies.
           </p>
           <a
             href="#"

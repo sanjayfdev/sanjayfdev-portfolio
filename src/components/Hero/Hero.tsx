@@ -23,7 +23,7 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-neutral mt-3">
-            Crafting innovative solutions to solve real-world problems
+            Building clean, responsive, and user-friendly web interfaces with modern technologies.
           </h2>
 
           <div className="mt-6 flex flex-wrap gap-6">

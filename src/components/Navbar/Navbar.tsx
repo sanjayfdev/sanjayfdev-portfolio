@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { BurgerIcon, CloseIcon, signImg } from '../../utils/icons'
-import Logo from './Logo'
+// import Logo from './Logo'
 import Image from 'next/image'
 const navItems = [
   {
@@ -43,17 +43,17 @@ const Navbar = () => {
           <Link href="/">
             <div className="animate-fade-up text-primary-content relative flex items-center gap-3 transition-all duration-300 md:static">
               {/* <Logo /> */}
-              <Image  src={signImg}
-            alt="Sign"
-            width={200}
-            height={100}
-            className="mx-auto rounded-full"
-            />
+              <Image src={signImg}
+                alt="Sign"
+                width={150}
+                height={100}
+                className="mx-auto rounded-full"
+              />
               <span className="text-primary-content"> </span>
             </div>
           </Link>
         )}
-       
+
 
         <div className="md:hidden">
           <button onClick={toggleMenu}>
