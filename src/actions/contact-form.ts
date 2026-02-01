@@ -1,59 +1,26 @@
 'use server'
 
-const action = async (_: { success: boolean; message: string } | null, formData: FormData) => {
+const action = async (
+  _prevState: { success: boolean; message: string } | null,
+  formData: FormData
+) => {
   try {
-    const name = formData.get('name')
-    if (!name)
-      return {
-        success: false,
-        message: 'Please provide your name.',
-      }
-
-    const email = formData.get('email')
-    if (!email)
-      return {
-        success: false,
-        message: 'Please provide your email address.',
-      }
-
-    const subject = formData.get('subject')
-    if (!subject)
-      return {
-        success: false,
-        message: 'Please provide a subject.',
-      }
-
-    const message = formData.get('message')
-    if (!message)
-      return {
-        success: false,
-        message: 'Please provide a message.',
-      }
-
-    const res = await fetch(process.env.CONTACT_FORM_ACTION_URL!, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/contact`, {
       method: 'POST',
       body: formData,
-      headers: {
-        Accept: 'application/json',
-      },
     })
 
-    if (res.ok) {
-      return { success: true, message: 'Thanks for your submission!' }
-    } else {
-      const data = await res.json()
-      console.error(data?.error)
+    const data = await res.json()
 
-      return {
-        success: false,
-        message: 'Oops! There was a problem submitting your form',
-      }
+    if (!res.ok) {
+      return { success: false, message: data.message }
     }
+
+    return { success: true, message: 'Thanks! I will contact you soon.' }
   } catch (error) {
-    console.error('Contact form submission error: ' + error)
     return {
       success: false,
-      message: 'Oops! There was a problem submitting your form',
+      message: 'Failed to send message. Please try again.',
     }
   }
 }
