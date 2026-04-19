@@ -39,14 +39,14 @@ const Hero = () => {
               Hire Me
             </a>
 
-            <a
+            {/* <a
               href="/Sanjay_Kumar_Full_Stack_Developer_new.docx"
               download
               aria-label="Download Resume"
               className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm border border-border hover:bg-secondary/80 transition"
             >
               Download Resume
-            </a>
+            </a> */}
 
             <a
               href="https://www.linkedin.com/jobs/"
