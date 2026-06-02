@@ -4,7 +4,7 @@ import ProjectGrid from "./ProjectGrid";
 import { motion } from "framer-motion";
 import SectionHeading from "../SectionHeading/SectionHeading";
 
-const techs = ["All", "JavaScript", "React", "MERN", "DotNet"];
+const techs = ["All", "JavaScript", "React.js", "MERN", "DotNet"];
 
 const ProjectsTabs = () => {
     const [active, setActive] = useState("All");

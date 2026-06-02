@@ -56,7 +56,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({tech}) => {
               src={project.cover || "/projects/placeholder.png"}
               alt={project.title}
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 
@@ -96,7 +96,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({tech}) => {
                 Live Preview
               </a>
 
-              <a
+             {project.github && <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -105,7 +105,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({tech}) => {
                            hover:bg-primary transition"
               >
                 GitHub
-              </a>
+              </a>}
             </div>
           </div>
         </motion.div>
